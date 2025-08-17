@@ -1,0 +1,238 @@
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: black;
+  border-right: solid;
+  border-right-color: rgba(255, 255, 255, 0.15);
+  border-right-width: 0.5px;
+  z-index: 100;
+}
+
+.insta-logo {
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.heading {
+  color: white;
+  font-family: "Engagement", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; 
+}
+
+.insta-link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+.more-logo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.home-link i {
+  color: white;
+  font-size: 30px;
+}
+
+#home {
+  font-weight: bold;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin-left: 30px;
+  padding-left: 8px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.more:hover {
+  background-color: rgba(255, 254, 254, 0.1);
+  border-radius: 12px;
+}
+
+.link-name {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 1265px) {
+  .navigation {
+    width: 70px;
+  }
+
+  .link-name {
+    display: none;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .insta-link {
+    display: inline-block;
+  }
+
+  .more {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .more:hover {
+    border-radius: 5px;
+  }
+
+  .more-logo {
+    align-items: center;
+  }
+
+  .insta-logo {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    height: 40px;
+  }
+
+  .insta-logo:hover {
+    background-color: rgba(255, 254, 254, 0.1);
+  }
+
+}
+
+.nav-down {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  height: 40px;
+  border-top: solid;
+  border-top-color: rgba(255, 255, 255, 0.15);
+  border-top-width: 0.5px;
+  z-index: 100;
+}
+
+.nav-up {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  z-index: 100;
+
+}
+
+.insta-logo2 {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.heading2 {
+  color: white;
+  font-family: "Engagement", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px; 
+}
+
+.Search-bar {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  height: 33px;
+  border: none;
+  width: 250px;
+  border-radius: 6px;
+  background-color: rgb(12, 62, 57);
+  color: white;
+}
+
+.search-input::placeholder {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.search-input:focus {
+  outline-width: 0;
+}
+
+.like-icon2 {
+  width: 30px;
+  height: 30px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 766px) {
+
+  .navigation {
+    display: none;
+  }
+
+  .main-page {
+    margin-left: 0;
+  }
+
+  .nav-down {
+    display: flex;
+  }
+
+  .nav-up {
+    display: flex;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+
+  .more:hover {
+    background-color: black;
+  }
+
+  .more i {
+    cursor: pointer;
+  }
+
+  .more {
+    cursor: initial;
+  }
+}
